@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dell Latitude 7320 -Dell Technology</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 980px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .banner {
+            background-color: #f8f8f8;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .banner img {
+            max-width: 150px;
+            margin-right: 20px;
+        }
+        .product-info {
+            display: flex;
+        }
+        .product-image {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .product-details {
+            flex: 2;
+        }
+        .canada-map {
+            margin-top: 20px;
+            position: relative;
+        }
+        .canada-map svg {
+            max-width: 100%;
+            height: auto;
+        }
+        .map-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .location-marker {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .location-marker:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <a href="https://www.dell.com/en-ke/lp">
+                <img src="company-logo.png" alt="Company Logo">
+            </a>
+            <h1>Dell Latitude 7320</h1>
+        </div>
+        
+        <div class="product-info">
+            <div class="product-image">
+                <img src="product-image.jpg" alt="Dell Latitude 7320">
+                <p><a href="Details.html">View Larger Picture</a></p>
+            </div>
+            <div class="product-details">
+                <h2>Dell Latitude 7320, Intel Core i7 1185G7, 16GB DDR4 3200, 512GB</h2>
+                <p>The Dell Latitude 7320 is a perfect blend of power, portability, and professional-grade features. Equipped with an Intel Core i7-1185G7 processor, 16GB DDR4 memory, and a 512GB PCIe NVMe SSD, it ensures seamless multitasking and rapid performance. Its 13.3" FHD display delivers crisp visuals, while the backlit keyboard keeps you productive in any lighting. Stay connected with two Thunderbolt 4 ports, HDMI 2.0, and USB 3.2 with PowerShare, ensuring fast data transfers and device charging on the go. Security and convenience are prioritized with a webcam, microSD slot, and wedge lock slot, backed by a reliable 3-year warranty. Built for professionals, the Latitude 7320 transforms how you work with a perfect balance of speed, elegance, and versatility.</p>
+                <h3>Features:</h3>
+                <ul>
+                    <li>Equipped with an Intel Core i7-1185G7 processor and 16GB DDR4 memory for seamless multitasking</li>
+                    <li>512GB PCIe NVMe SSD ensures rapid data access and quick boot times.</li>
+                    <li>Full HD screen delivers vibrant visuals for work and entertainment.</li>
+                    <li>Features two Thunderbolt 4 ports, HDMI 2.0, USB 3.2 with PowerShare, and a microSD card slot.</li>
+                    <li>Backlit keyboard, integrated webcam, wedge lock slot, and a 3-year warranty provide security and productivity on the go.</li>
+                </ul>
+                <p>Price: $2,300.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="canada-map">
+            <h3>Find a Distributor</h3>
+            <object type="image/svg+xml" data="ca.svg" id="canada-svg">
+            </object>
+            <div class="map-overlay">
+                <div class="location-marker" style="top: 10%; left: 65%;" onclick="showLocation('Location 1')"></div>
+                <div class="location-marker" style="top: 75%; left: 75%;" onclick="showLocation('Location 2')"></div>
+                <div class="location-marker" style="top: 70%; left: 30%;" onclick="showLocation('Location 3')"></div>
+            </div>
+        </div>
+
+        <p><a href="https://fadwaelgour.github.io/COMP213week1demo/">Home Page</a></p>
+    </div>
+
+    <script>
+        function showLocation(locationName) {
+            alert('You clicked on ' + locationName);
+        }
+    </script>
+
+    <!-- Student Name: Fadwa ElGour, Student Number: 301331379 -->
+</body>
+</html>
